@@ -11,7 +11,17 @@ class PengacaraController extends Controller
     public function showIndex()
     {
         $referedBy = 'ariefraihandi';
-        return view('Pengacara.cariPengacara');
+        $title = 'Cari Pengacara';
+        $subTitle = 'Bilik Hukum';
+    
+        $data = [
+            'referedBy' => $referedBy,
+            'title' => $title,
+            'subTitle' => $subTitle,
+            // Tambahkan variabel lain ke array $data
+        ];
+
+        return view('Pengacara.cariPengacara', compact('data'));
         
     }
 

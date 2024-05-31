@@ -20,8 +20,5 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css" />
 
     
-
-    <title>
-      Cari Pengacara - Bilik Hukum
-    </title>
+      <title>{{ $data['title'] }} - {{ $data['subTitle']}}</title> - 
   </head>

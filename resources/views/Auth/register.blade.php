@@ -190,7 +190,7 @@
                                 <!-- Website -->
                                 <div class="col-sm-6">
                                     <label class="form-label" for="website">Website (opsional)</label>
-                                    <input type="text" required id="website" name="website" class="form-control" placeholder="kantorsaya.com" />
+                                    <input type="text" required id="website" name="website" class="form-control" placeholder="https://kantorsaya.com/" />
                                     <small class="error-message text-danger"></small>
                                 </div>
                                 <!-- Slogan Kantor -->
@@ -832,6 +832,13 @@
                     } else {
                         errorMessage.textContent = '';
                         valid = true;
+                    }
+                }  else if (input.id === 'website') {
+                    if (input.value && !input.value.startsWith('https://')) {
+                        errorMessage.textContent = 'URL harus dimulai dengan https://';
+                        valid = false;
+                    } else {
+                        errorMessage.textContent = '';
                     }
                 } else {
                     errorMessage.textContent = '';
