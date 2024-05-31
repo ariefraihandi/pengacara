@@ -20,5 +20,5 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css" />
 
     
-      <title>{{ $data['title'] }} - {{ $data['subTitle']}}</title> - 
+      <title>{{ $data['title'] }} - {{ $data['subTitle']}}</title>
   </head>
